@@ -1,0 +1,31 @@
+.header__container {
+  display: flex;
+  flex-direction: row;
+  justify-content: stretch;
+  padding: 0 36px;
+  align-items: center;
+  height: 60px;
+  background: #1a1d29;
+}
+.header__container > .logo__header > img {
+  height: 40px;
+  object-fit: cover;
+}
+.header__container > .list__header {
+  display: flex;
+  flex-direction: row;
+  margin-left: 20px;
+  flex: 1;
+}
+.header__container > .list__header > a {
+  color: whitesmoke;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-left: 10px;
+  cursor: pointer;
+  gap: 2px;
+}
+.header__container > .list__header > a > .icon__a {
+  height: 17px;
+}
