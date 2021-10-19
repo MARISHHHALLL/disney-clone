@@ -26,8 +26,8 @@ const HeaderPage = () => {
       <Tooltip TransitionComponent={Zoom} title='name' placement='left'>
         <Avatar
           sx={{
-            height: '30px',
-            width: '30px;',
+            height: '40px',
+            width: '40px;',
             objectFit: 'contain',
             cursor: 'pointer',
           }}
@@ -54,9 +54,9 @@ const FullContole = styled.div`
 const ListHeader = styled.h4`
   font-weight: 400;
   text-transform: uppercase;
-  font-size: 12px;
+  font-size: 15px;
   letter-spacing: 0.9px;
-  transform: translateY(1px);
+  // transform: translateY(1px);
   position: relative;
   &::after {
     content: '';

@@ -52,7 +52,7 @@ const Spos = styled.div`
     border: 4px solid transparent;
     height: 100%;
     width: 100%;
-    border-radius: 5px;
+    border-radius: 8px;
     &:hover {
       border: 4px solid whitesmoke;
     }

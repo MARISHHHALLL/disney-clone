@@ -4,7 +4,7 @@
   justify-content: stretch;
   padding: 0 36px;
   align-items: center;
-  height: 60px;
+  height: 76px;
   background: #1a1d29;
 }
 .header__container > .logo__header > img {
@@ -27,5 +27,5 @@
   gap: 2px;
 }
 .header__container > .list__header > a > .icon__a {
-  height: 17px;
+  height: 20px;
 }

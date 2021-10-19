@@ -1,10 +1,12 @@
 import React from 'react'
 import SlideSection from './SlideSection'
 import styled from 'styled-components'
+import Logos from './Logos'
 const MainIndex = () => {
   return (
     <Container>
       <SlideSection />
+      <Logos />
     </Container>
   )
 }
@@ -12,7 +14,7 @@ const MainIndex = () => {
 export default MainIndex
 const Container = styled.div`
   // background: #1a1d29;
-  min-height: calc(100vh - 60px);
+  min-height: calc(100vh - 76px);
   padding: 0 30px;
   overflow: hidden;
   position: relative;
