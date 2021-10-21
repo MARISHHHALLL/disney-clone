@@ -2,11 +2,13 @@ import React from 'react'
 import SlideSection from './SlideSection'
 import styled from 'styled-components'
 import Logos from './Logos'
+import Context from './Context'
 const MainIndex = () => {
   return (
     <Container>
       <SlideSection />
       <Logos />
+      <Context />
     </Container>
   )
 }
