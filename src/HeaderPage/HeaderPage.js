@@ -55,8 +55,8 @@ const ListHeader = styled.h4`
   font-weight: 400;
   text-transform: uppercase;
   font-size: 15px;
-  letter-spacing: 0.9px;
-  // transform: translateY(1px);
+  letter-spacing: 1.04px;
+  transform: translateY(1px);
   position: relative;
   &::after {
     content: '';
