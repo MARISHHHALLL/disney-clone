@@ -25,6 +25,14 @@ const detail = () => {
             <img src='/images/group-icon.png' alt='' />
           </GroupIt>
         </Buttons>
+        <Title>2018 . 7m . family, fantasy, kids, animation</Title>
+        <Description>
+          Can an API even be used without documentation for REST API & OpenAPI?
+          While technically possible, it’s through good API documentation and
+          API documentation best practices that developers first experience an
+          API and get to know its functionality. Whether your API is meant for
+          internal use, exposed to partners
+        </Description>
       </Content>
     </Container>
   )
@@ -104,5 +112,18 @@ const WatchL = styled.button`
   cursor: pointer;
 `
 const GroupIt = styled(WatchL)`
+  background: black;
+`
+const Title = styled.div`
+  padding: 0 30px;
+  color: rgba(249, 249, 249, 0.8);
+  text-transform: capitalize;
+  font-size: 15px;
+`
+const Description = styled.div`
+  padding: 10px 30px;
+  max-width: 800px;
+  color: rgba(249, 249, 249, 1);
+  line-height: 1.4;
   font-size: 20px;
 `
