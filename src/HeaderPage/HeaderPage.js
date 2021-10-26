@@ -54,7 +54,7 @@ const FullContole = styled.div`
 const ListHeader = styled.h4`
   font-weight: 400;
   text-transform: uppercase;
-  font-size: 15px;
+  font-size: 14px;
   letter-spacing: 1.04px;
   transform: translateY(1px);
   position: relative;
