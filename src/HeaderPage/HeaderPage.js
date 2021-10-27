@@ -60,12 +60,12 @@ const ListHeader = styled.h4`
   position: relative;
   &::after {
     content: '';
-    height: 2px;
+    height: 2.5px;
     background: white;
     position: absolute;
     left: 0;
     right: 0;
-    bottom: -2px;
+    bottom: -4px;
     opacity: 0;
     transform: scale(0);
     transform-origin: left center;
