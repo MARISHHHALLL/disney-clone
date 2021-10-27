@@ -43,7 +43,7 @@ const Main = styled(Slider)`
     font-size: 8px;
   }
   button {
-    z-index: 1;
+    z-index: 10;
   }
 `
 const Spos = styled.div`
@@ -53,8 +53,10 @@ const Spos = styled.div`
     height: 100%;
     width: 100%;
     border-radius: 8px;
+    transition: all 250ms;
     &:hover {
       border: 4px solid whitesmoke;
+      transform: scale(1.02);
     }
   }
 `

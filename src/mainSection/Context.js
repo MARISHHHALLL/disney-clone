@@ -27,7 +27,19 @@ const Container = styled.div`
     color: white;
     font-size: 17px;
     letter-spacing: 0.9px;
+    position: relative;
+    padding-left: 25px;
     text-transform: capitalize;
+    &:before {
+      content: '';
+      height: 2px;
+      width: 15px;
+      background: white;
+      position: absolute;
+      left: 5px;
+      top: 9px;
+      right: 0;
+    }
   }
 `
 const Content = styled.div`
