@@ -1,15 +1,28 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import styled from 'styled-components'
-
-const detail = () => {
+import { useParams } from 'react-router'
+import db from '../firebase'
+const Detail = () => {
+  const { id } = useParams()
+  const [piece, setPiece] = useState([])
+  useEffect(() => {
+    db.collection('movies')
+      .doc(id)
+      .get()
+      .then((titan) => {
+        if (titan.exists) {
+          setPiece(titan.data())
+        }
+      })
+  }, [])
   return (
     <Container>
       <Background>
-        <img src='/images/detail-images.jpg' alt='' />
+        <img src={piece.background} alt='' />
       </Background>
       <Content>
         <LogoBack>
-          <img src='/images/coco-logo.png' alt='' />
+          <img src={piece.minilogo} alt='' />
         </LogoBack>
         <Buttons>
           <FrBtn>
@@ -25,20 +38,14 @@ const detail = () => {
             <img src='/images/group-icon.png' alt='' />
           </GroupIt>
         </Buttons>
-        <Title>2018 . 7m . family, fantasy, kids, animation</Title>
-        <Description>
-          Can an API even be used without documentation for REST API & OpenAPI?
-          While technically possible, it’s through good API documentation and
-          API documentation best practices that developers first experience an
-          API and get to know its functionality. Whether your API is meant for
-          internal use, exposed to partners
-        </Description>
+        <Title>{piece.title}</Title>
+        <Description>{piece.description}</Description>
       </Content>
     </Container>
   )
 }
 
-export default detail
+export default Detail
 const Container = styled.div`
   min-height: calc(100vh - 76px);
   padding: 0 30px;

@@ -7,10 +7,6 @@
   height: 76px;
   background: #1a1d29;
 }
-.header__container > .logo__header > img {
-  height: 40px;
-  object-fit: cover;
-}
 .header__container > .list__header {
   display: flex;
   flex-direction: row;
@@ -28,5 +24,6 @@
   gap: 2px;
 }
 .header__container > .list__header > a > .icon__a {
-  height: 20px;
+  height: 18px;
+  border-color: white !important;
 }

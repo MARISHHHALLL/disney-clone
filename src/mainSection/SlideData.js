@@ -15,9 +15,5 @@ const SlideData = [
     id: 4,
     source: '/images/slider-scales.jpg',
   },
-  {
-    id: 5,
-    source: '/images/slider-group.jpg',
-  },
 ]
 export default SlideData

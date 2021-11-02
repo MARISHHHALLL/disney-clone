@@ -1,20 +1,25 @@
 import React, { useState } from 'react'
 import styled from 'styled-components'
-import ContextData from './ContextData'
+import { useSelector } from 'react-redux'
+import { selectMovie } from '../features/movies/movieSlice'
+import { Link } from 'react-router-dom'
 const Context = () => {
-  const [Cdata, setCdata] = useState(ContextData)
+  const selector = useSelector(selectMovie)
+  // const [Cdata, setCdata] = useState(selector)
   return (
     <Container>
       <h4>recommended for you</h4>
       <Content>
-        {Cdata.map((data) => {
-          const { id, src } = data
-          return (
-            <Wrap key={id}>
-              <img src={src} alt='' />
-            </Wrap>
-          )
-        })}
+        {selector &&
+          selector.map((data) => {
+            return (
+              <Wrap key={data.id}>
+                <Link to={`/detail/${data.id}`}>
+                  <img src={data.background} alt='' />
+                </Link>
+              </Wrap>
+            )
+          })}
       </Content>
     </Container>
   )

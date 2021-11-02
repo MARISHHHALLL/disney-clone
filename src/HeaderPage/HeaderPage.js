@@ -4,13 +4,19 @@ import styled from 'styled-components'
 import HeaderData from './HeaderData'
 import { Avatar, Zoom } from '@mui/material'
 import Tooltip from '@mui/material/Tooltip'
+import { Link } from 'react-router-dom'
 const HeaderPage = () => {
   const [data, setData] = useState(HeaderData)
-  console.log(data)
   return (
     <Container className='header__container'>
       <div className='logo__header'>
-        <img src='/images/logo.svg' alt='' />
+        <Link to='/'>
+          <img
+            src='/images/logo.svg'
+            style={{ height: '35px', objectFit: 'cover' }}
+            alt=''
+          />
+        </Link>
       </div>
       <FullContole className='list__header'>
         {data.map((Hdata) => {
@@ -42,6 +48,13 @@ const HeaderPage = () => {
 export default HeaderPage
 const Container = styled.div``
 const FullContole = styled.div`
+  a {
+    .icon__a svg {
+      color: #fff;
+      border-color: #fff;
+      fill: #fff;
+    }
+  }
   a:hover {
     h4 {
       &::after {

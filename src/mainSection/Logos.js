@@ -10,7 +10,7 @@ const Logos = () => {
         return (
           <Cont key={id}>
             <img src={slogo} alt='' />
-            <video autoPlay='true' muted loop='true' playsInline='true'>
+            <video autoPlay muted loop playsInline>
               <source src={svideo} type='video/mp4' />
             </video>
           </Cont>
